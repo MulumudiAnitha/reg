@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project3.css">
+    <style>
+        body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: crimson;
+}
+h2{
+    text-align: center;
+}
+form{
+    padding: 10px;
+    height:550px;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: lightcoral;
+}
+label{
+    display: block;
+    margin:1px;
+    font-weight: bold;
+   }
+   input[type=text],
+   input[type=tel],
+   input[type=email],
+   input[type=password],
+   textarea{
+    padding: 8px;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    width: 90%;
+    margin-bottom: 2px;
+}
+select{
+ width:100%;
+ padding: 8px;
+ border:1px solid whitesmoke;
+ border-radius: 3px;
+ margin-bottom: 10px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    color: aliceblue;
+ background-color:dimgray;
+ cursor: pointer;
+}
+input[type="submit"]:hover{
+ background-color:blue;
+}
+.container{
+ width:400px;
+ margin: auto;
+ height: 700px;
+}
+
+    </style>
+
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"required><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"required><br>
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password"required><br>
+        <label for="phone number">Phone Number:</label>
+        <input type="tel" id="phone number" name="phone number"required><br>
+        <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="MALE">MALE
+            <input type="radio" name="gender" value="FEMALE">FEMALE
+            <input type="radio" name="gender" value="OTHERS">OTHERS
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="Telugu" name="telugu">Telugu</option>
+            <option vlaue="english" name="english">English</option>
+            <option vlaue="Hindi" name="Hindi">Hindi</option>
+        </select>
+        <label for="Zipcode">Zipcode:</label>
+        <input type="text" id="zipcode" name="zipcode"required><br>
+        <label for="about">About:</label>
+        <textarea id="about"></textarea><br><br>
+        <div class="mahi">
+        <label for="register"></label>    
+        <input type="submit" value="Register"></div><br><br>
+        </di></form>
+
+    </table>
+    
+</body>
+</html>
